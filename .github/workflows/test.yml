@@ -10,10 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Build With Gradle
@@ -27,8 +25,7 @@ jobs:
             mv "$file" ${{ github.workspace }}/apk/
           done
       - name: Upload App To Artifact
-        uses: actions/upload-artifact@v4
-            - name: Upload Binary
+        uses: actions/upload-artifact@v3
         with:
           name: com.github.tvbox.osc
           path: ${{ github.workspace }}/apk/*
