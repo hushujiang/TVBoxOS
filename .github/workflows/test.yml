@@ -31,8 +31,5 @@ jobs:
             - name: Upload Binary
         uses: actions/upload-artifact@master
         with:
-          name: telegram-bot-api-binary
-          path: telegram-bot-api-binary
-        with:
           name: com.github.tvbox.osc
           path: ${{ github.workspace }}/apk/*
