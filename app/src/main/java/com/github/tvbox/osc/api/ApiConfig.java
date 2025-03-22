@@ -167,9 +167,9 @@ public class ApiConfig {
         return configUrl;
     }
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://hushujiang.github.io/tvbox.json");
         //独立加载直播配置
-        String liveApiUrl = Hawk.get(HawkConfig.LIVE_API_URL, "");
+        String liveApiUrl = Hawk.get(HawkConfig.LIVE_API_URL, "https://hushujiang.github.io/tvbox.json");
         String liveApiConfigUrl=configUrl(liveApiUrl);
         if(!liveApiUrl.isEmpty() && !liveApiUrl.equals(apiUrl)){
             if(liveApiUrl.contains(".txt") || liveApiUrl.contains(".m3u") || liveApiUrl.contains("=txt") || liveApiUrl.contains("=m3u")){
