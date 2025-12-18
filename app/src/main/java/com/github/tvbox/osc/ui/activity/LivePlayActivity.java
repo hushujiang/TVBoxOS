@@ -1373,7 +1373,7 @@ public class LivePlayActivity extends BaseActivity {
     }
     //kens 7天回放数据绑定和展示
     private void initEpgDateView() {
-        mEpgDateGridView.setHasFixedSize(true);
+        mEpgDateGridView.setHasFixedSize(false);
         mEpgDateGridView.setLayoutManager(new V7LinearLayoutManager(this.mContext, 1, false));
         liveEpgDateAdapter = new LiveEpgDateAdapter();
         Calendar calendar = Calendar.getInstance();
