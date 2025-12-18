@@ -1398,8 +1398,6 @@ public class LivePlayActivity extends BaseActivity {
                 mHandler.postDelayed(mHideChannelListRun, postTimeout);
             }
         });
-        // 设置EPG列表默认宽度为屏幕的80%
-        updateEpgWidth(0.8f);
         //电视
         mEpgDateGridView.setOnItemListener(new TvRecyclerView.OnItemListener() {
             @Override
