@@ -245,9 +245,9 @@
 
 	<LinearLayout
         android:id="@+id/tvRightSettingLayout"
-        android:layout_width="361mm"
+        android:layout_width="541mm"
         android:layout_height="match_parent"
-        android:layout_marginRight="-361mm"
+        android:layout_marginRight="-541mm"
         android:layout_gravity="right"
 		android:background="@drawable/bg_channel_list"
 		android:gravity="center_vertical"
@@ -256,7 +256,7 @@
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mSettingItemView"
-            android:layout_width="180mm"
+            android:layout_width="270mm"
             android:layout_height="match_parent"
             android:paddingLeft="5mm"
             android:paddingTop="10mm"
@@ -275,7 +275,7 @@
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
             android:id="@+id/mSettingGroupView"
-            android:layout_width="180mm"
+            android:layout_width="270mm"
             android:layout_height="match_parent"
             android:paddingLeft="5mm"
             android:paddingTop="10mm"
